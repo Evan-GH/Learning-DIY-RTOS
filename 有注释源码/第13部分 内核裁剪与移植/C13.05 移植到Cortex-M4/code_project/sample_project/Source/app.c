@@ -36,9 +36,9 @@ void task1Entry (void * param)
     for (;;)
     {
         task1Flag = 1;
-        tTaskDelay(1);
+        tTaskDelay(TICKS_PER_SEC);
         task1Flag = 0;
-        tTaskDelay(1);
+        tTaskDelay(TICKS_PER_SEC);
     }
 }
 
